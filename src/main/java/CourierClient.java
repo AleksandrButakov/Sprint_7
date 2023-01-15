@@ -17,4 +17,12 @@ public class CourierClient extends Client {
                 .then();
     }
 
+    public ValidatableResponse login(CourierCredentials credentials) {
+
+    }
+
+    public ValidatableResponse delete(int id) {
+
+    }
+
 }
