@@ -2,17 +2,19 @@ import static io.restassured.RestAssured.given;
 
 import io.restassured.response.ValidatableResponse;
 
-public class CourierClient {
+import java.awt.datatransfer.Clipboard;
 
-    private
+public class CourierClient extends Client {
+
+    private static final String PATH = "api/v1/courier";
 
     public ValidatableResponse create(Courier courier) {
         return given()
-                .spec()
+                .spec(getSpec())
                 .body(courier)
                 .when()
-                .post("")
-                .then;
+                .post(PATH)
+                .then();
     }
 
 }
