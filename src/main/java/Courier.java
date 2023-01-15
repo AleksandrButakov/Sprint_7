@@ -4,6 +4,10 @@ public class Courier {
     private String password;
     private String firstTime;
 
+    public Courier() {
+
+    }
+
     public String getLogin() {
         return login;
     }
