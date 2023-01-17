@@ -23,7 +23,7 @@ public class CourierTest {
 
     @After
     public void cleanUp() {
-        courierClient.delete(id);
+        //courierClient.delete(id);
     }
 
     @Test

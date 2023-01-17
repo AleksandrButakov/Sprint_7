@@ -22,6 +22,11 @@ public class CourierClient extends Client {
     }
 
     public ValidatableResponse delete(int id) {
+        return given()
+                .spec(getSpec())
+                .body(courier)
+                .when()
+                .post();
 
     }
 
